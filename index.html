@@ -3,36 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- 
-    ========================================
-    EJERCICIO PARA ESTUDIANTES - HTML
-    ========================================
-    
-    Este archivo contiene ERRORES INTENCIONALES que debes encontrar y corregir.
-    
-    INSTRUCCIONES:
-    1. Busca los comentarios que comienzan con "ERROR #" 
-    2. Lee la PISTA para entender qué está mal
-    3. Corrige el código y observa los cambios en el navegador
-    
-    TOTAL DE ERRORES EN HTML: 10
-    
-    TEMAS QUE PRACTICARÁS:
-    - Clases CSS correctas y ortografía
-    - Atributos href para enlaces internos
-    - Iconos de Font Awesome
-    - Estructura semántica
-    - Modificadores de clases BEM
-    
-    TIP: Usa las herramientas de desarrollo del navegador (F12) 
-         para inspeccionar elementos y ver qué estilos faltan.
-    
-    ¡Buena suerte!
-    ========================================
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de [Tu Nombre] - Ingeniero en Tecnologías de la Información">
-    <title>Tu Nombre | Portfolio</title>
+    <title>Rafael Moctezuma | Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +25,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
+                <span class="logo__bracket">&lt;</span>RafaelM<span class="logo__bracket">/&gt;</span>
             </a>
 
             <!-- Checkbox para menú móvil (CSS only) -->
@@ -103,23 +76,19 @@
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__greeting">¡Hola! 👋 Soy</span>
-                    <h1 class="hero__title">Tu Nombre Completo</h1>
+                    <h1 class="hero__title">Diego Rafael Moctezuma Ramirez</h1>
                     <h2 class="hero__subtitle">
-                        <span class="highlight">Ingeniero de Software</span> en Crecimiento
+                        <span class="highlight">Científico de Datos</span> en Crecimiento
                     </h2>
                     <p class="hero__description">
-                        Recién egresado de Tecnologías de la Información apasionado por crear
-                        soluciones digitales innovadoras. Combino creatividad técnica con un
-                        enfoque orientado a resultados para transformar ideas en código funcional.
+                        Estudiante de Ciencia de Datos apasionado por crear soluciones analíticas innovadoras. Combino
+                        pensamiento matemático con herramientas de machine learning para transformar datos crudos en
+                        decisiones estratégicas.
                     </p>
-                    <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
-                         PISTA: Revisa las clases del botón, falta una clase -->
                     <div class="hero__buttons">
                         <a href="#projects" class="btn btn--primary">
                             <i class="fas fa-rocket"></i> Ver mis proyectos
                         </a>
-                        <!-- ERROR 2: El enlace no lleva a la sección correcta
-                             PISTA: El ID de la sección de contacto es "contact", verifica el href -->
                         <a href="#contact" class="btn btn--outline">
                             <i class="fas fa-envelope"></i> Contáctame
                         </a>
@@ -153,132 +122,121 @@
                     <span class="section__subtitle">Lo que me apasiona</span>
                     <h2 class="section__title">Intereses & Especialidades</h2>
                     <p class="section__description">
-                        Áreas tecnológicas que me entusiasman y en las que busco especializarme
+                        Áreas tecnológicas en las que desarrollo soluciones escalables y modelos analíticos
                     </p>
                 </div>
 
                 <div class="interests__grid">
-                    <!-- Card 1 -->
-                    <!-- ERROR 3: Esta card no tiene el icono visible
-                         PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
-                    <article class="interest__card">
-                        <div class="card__icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="card__title">Desarrollo Web</h3>
-                        <p class="card__description">
-                            Creación de aplicaciones web modernas con tecnologías como
-                            HTML5, CSS3, JavaScript y frameworks actuales.
-                        </p>
-                        <div class="card__tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-                        </div>
-                    </article>
-
-                    <!-- Card 2 -->
-                    <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
-                         PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
-                    <article class="interest__card">
-                        <div class="card__icon">
-                            <i class="fas fa-shield-halved"></i>
-                        </div>
-                        <h3 class="card__title">Ciberseguridad</h3>
-                        <p class="card__description">
-                            Protección de sistemas y datos, análisis de vulnerabilidades
-                            y mejores prácticas de seguridad informática.
-                        </p>
-                        <div class="card__tags">
-                            <span class="tag">Seguridad Web</span>
-                            <span class="tag">Pentesting</span>
-                            <span class="tag">Redes</span>
-                        </div>
-                    </article>
-
-                    <!-- Card 3 -->
                     <article class="interest__card">
                         <div class="card__icon">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <h3 class="card__title">Inteligencia Artificial</h3>
+                        <h3 class="card__title">Data Science & Machine Learning</h3>
                         <p class="card__description">
-                            Machine Learning, procesamiento de datos y desarrollo de
-                            soluciones inteligentes con Python.
+                            Desarrollo de modelos predictivos, ingeniería de características (ETL) y análisis
+                            estadístico profundo para la toma de decisiones.
                         </p>
                         <div class="card__tags">
                             <span class="tag">Python</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Data Science</span>
+                            <span class="tag">Modelos de Regresión</span>
+                            <span class="tag">Análisis de Datos</span>
                         </div>
                     </article>
 
-                    <!-- Card 4 -->
-                    <article class="interest__card">
-                        <div class="card__icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3 class="card__title">Bases de Datos</h3>
-                        <p class="card__description">
-                            Diseño, administración y optimización de bases de datos
-                            relacionales y NoSQL.
-                        </p>
-                        <div class="card__tags">
-                            <span class="tag">MySQL</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                    </article>
-
-                    <!-- Card 5 -->
                     <article class="interest__card">
                         <div class="card__icon">
                             <i class="fas fa-mobile-screen-button"></i>
                         </div>
                         <h3 class="card__title">Desarrollo Móvil</h3>
                         <p class="card__description">
-                            Creación de aplicaciones móviles nativas y multiplataforma
-                            para Android e iOS.
+                            Creación de aplicaciones móviles nativas y multiplataforma con un enfoque centrado en la
+                            experiencia del usuario (HCAI).
                         </p>
                         <div class="card__tags">
-                            <span class="tag">Flutter</span>
+                            <span class="tag">Swift / SwiftUI</span>
                             <span class="tag">React Native</span>
-                            <span class="tag">Kotlin</span>
+                            <span class="tag">Arquitectura Móvil</span>
                         </div>
                     </article>
 
-                    <!-- Card 6 -->
                     <article class="interest__card">
                         <div class="card__icon">
-                            <i class="fas fa-cloud"></i>
+                            <i class="fas fa-database"></i>
                         </div>
-                        <h3 class="card__title">Cloud Computing</h3>
+                        <h3 class="card__title">Arquitectura de Datos</h3>
                         <p class="card__description">
-                            Servicios en la nube, arquitecturas escalables y
-                            despliegue de aplicaciones.
+                            Diseño, normalización y gestión de bases de datos para aplicaciones modernas y proyectos
+                            orientados a grandes volúmenes de información.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">Azure</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">NoSQL / SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="card__title">Desarrollo Web</h3>
+                        <p class="card__description">
+                            Construcción de aplicaciones web interactivas y plataformas escalables estructurando reglas
+                            de negocio sólidas.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="card__title">Automatización & Workflows</h3>
+                        <p class="card__description">
+                            Creación de flujos de trabajo automatizados, orquestación de servicios y configuración de
+                            entornos en contenedores.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">n8n</span>
                             <span class="tag">Docker</span>
+                            <span class="tag">Integración API</span>
+                        </div>
+                    </article>
+
+                    <article class="interest__card">
+                        <div class="card__icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="card__title">Big Data & Cómputo Paralelo</h3>
+                        <p class="card__description">
+                            Procesamiento de conjuntos de datos masivos y optimización del rendimiento computacional
+                            mediante concurrencia.
+                        </p>
+                        <div class="card__tags">
+                            <span class="tag">PySpark</span>
+                            <span class="tag">Computación Concurrente</span>
+                            <span class="tag">Arquitectura Cliente-Servidor</span>
                         </div>
                     </article>
                 </div>
 
-                <!-- Relevant Subjects -->
                 <div class="subjects">
                     <h3 class="subjects__title">
                         <i class="fas fa-graduation-cap"></i> Materias Relevantes
                     </h3>
                     <div class="subjects__list">
-                        <span class="subject">Programación Orientada a Objetos</span>
-                        <span class="subject">Estructuras de Datos</span>
-                        <span class="subject">Algoritmos</span>
-                        <span class="subject">Redes de Computadoras</span>
-                        <span class="subject">Ingeniería de Software</span>
+                        <span class="subject">Desarrolo Web</span>
+                        <span class="subject">Métodos Estadísticos</span>
+                        <span class="subject">Probabilidad y Simulación Estocástica</span>
+                        <span class="subject">Computación Concurrente</span>
+                        <span class="subject">Reconocimiento de Patrones</span>
+                        <span class="subject">Machine Learning</span>
                         <span class="subject">Bases de Datos</span>
-                        <span class="subject">Sistemas Operativos</span>
-                        <span class="subject">Desarrollo Web</span>
+                        <span class="subject">Big Data</span>
                     </div>
                 </div>
             </div>
@@ -301,7 +259,8 @@
                             <a href="https://www.overleaf.com/gallery/tagged/cv" class="btn btn--primary btn--large">
                                 <i class="fas fa-download"></i> Descargar CV
                             </a>
-                            <a href="#" class="btn btn--secondary btn--large">
+                            <a href="https://diegomoctezuma.github.io/lab05MoctezumaRamirezDiegoRafael/"
+                                class="btn btn--secondary btn--large" target="_blank">
                                 <i class="fas fa-eye"></i> Ver CV Digital
                             </a>
                         </div>
@@ -310,37 +269,37 @@
                     <div class="cv__social">
                         <h3 class="cv__social-title">Conectemos</h3>
                         <div class="cv__social-links">
-                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer"
-                                class="social__card">
+                            <a href="https://www.linkedin.com/in/rafael-moctezuma/" target="_blank"
+                                rel="noopener noreferrer" class="social__card">
                                 <div class="social__icon social__icon--linkedin">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">LinkedIn</span>
-                                    <span class="social__user">@tu-perfil</span>
+                                    <span class="social__user">@Diego Rafael Moctezuma Ramirez</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
 
-                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/DiegoMoctezuma" target="_blank" rel="noopener noreferrer"
                                 class="social__card">
                                 <div class="social__icon social__icon--github">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">GitHub</span>
-                                    <span class="social__user">@tu-usuario</span>
+                                    <span class="social__user">@DiegoMoctezuma</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
 
-                            <a href="mailto:tu@email.com" class="social__card">
+                            <a href="mailto:moctezumadiego5@gmail.com" class="social__card">
                                 <div class="social__icon social__icon--email">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">Email</span>
-                                    <span class="social__user">tu@email.com</span>
+                                    <span class="social__user">moctezumadiego5@gmail.com</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
@@ -351,8 +310,6 @@
         </section>
 
         <!-- ========== PROJECTS SECTION ========== -->
-        <!-- ERROR 5: Esta sección no tiene el contenido centrado ni con el ancho máximo
-             PISTA: Falta una clase importante en el div que envuelve el contenido -->
         <section class="projects section" id="projects">
             <div class="container">
                 <div class="section__header">
@@ -364,96 +321,82 @@
                 </div>
 
                 <div class="projects__grid">
-                    <!-- Project 1 -->
                     <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
-                                <i class="fas fa-laptop-code"></i>
+                                <i class="fas fa-mobile-screen"></i>
                             </div>
                             <div class="project__overlay">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/tu-usuario/proyecto-1" target="_blank"
+                                <a href="https://github.com/DiegoMoctezuma/GlosarioFinanzas" target="_blank"
                                     rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">E-Commerce Platform</h3>
+                            <h3 class="project__title">Glosario Móvil Inteligente</h3>
                             <p class="project__description">
-                                Plataforma de comercio electrónico con carrito de compras,
-                                autenticación de usuarios y pasarela de pagos integrada.
+                                Aplicación móvil multiplataforma que integra un glosario de términos con un agente de
+                                inteligencia artificial, orquestado mediante flujos automatizados para consultas
+                                dinámicas.
                             </p>
                             <div class="project__tech">
-                                <span class="tech">React</span>
-                                <span class="tech">Node.js</span>
-                                <span class="tech">MongoDB</span>
+                                <span class="tech">React Native</span>
+                                <span class="tech">TypeScript</span>
+                                <span class="tech">n8n</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 2 -->
-                    <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
-                         PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
                     <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-database"></i>
                             </div>
                             <div class="project__overlay">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/tu-usuario/proyecto-2" target="_blank"
+                                <a href="https://github.com/DiegoMoctezuma/Proyecto_OLTP" target="_blank"
                                     rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">Dashboard Analytics</h3>
+                            <h3 class="project__title">Plataforma Web Relacional</h3>
                             <p class="project__description">
-                                Panel de control interactivo para visualización de datos
-                                con gráficos dinámicos y reportes automatizados.
+                                Aplicación web interactiva conectada a una base de datos SQL para la gestión,
+                                almacenamiento y visualización dinámica de registros desde el navegador.
                             </p>
                             <div class="project__tech">
-                                <!-- ERROR 7: Estos tags de tecnología no tienen el estilo correcto
-                                     PISTA: Revisa la clase de los spans, debería ser "tech" -->
                                 <span class="tech">Python</span>
-                                <span class="tech">Django</span>
-                                <span class="tech">Chart.js</span>
+                                <span class="tech">SQL</span>
+                                <span class="tech">JS / HTML / CSS</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
                     <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
-                                <i class="fas fa-robot"></i>
+                                <i class="fas fa-brain"></i>
                             </div>
                             <div class="project__overlay">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/tu-usuario/proyecto-3" target="_blank"
-                                    rel="noopener noreferrer" class="project__link">
+                                <a href="https://github.com/DiegoMoctezuma/RegresionesLineales_CreditScoring"
+                                    target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">AI Chatbot Assistant</h3>
+                            <h3 class="project__title">Modelos de Credit Scoring</h3>
                             <p class="project__description">
-                                Asistente virtual inteligente con procesamiento de lenguaje
-                                natural y respuestas contextuales.
+                                Pipeline analítico para predecir pagos de tarjetas de crédito. Incluye procesos de
+                                extracción (ETL), ingeniería de características y evaluación de modelos de
+                                regularización (Lasso, Ridge,etc).
                             </p>
                             <div class="project__tech">
                                 <span class="tech">Python</span>
-                                <span class="tech">TensorFlow</span>
-                                <span class="tech">Flask</span>
+                                <span class="tech">Machine Learning</span>
+                                <span class="tech">ETL</span>
                             </div>
                         </div>
                     </article>
@@ -487,24 +430,21 @@
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Email</span>
-                                    <a href="mailto:tu@email.com" class="contact__value">tu@email.com</a>
+                                    <a href="mailto:moctezumadiego5@gmail.com"
+                                        class="contact__value">moctezumadiego5@gmail.com</a>
                                 </div>
                             </div>
 
-                            <!-- ERROR 8: Este icono de ubicación no se muestra correctamente
-                                 PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
                             <div class="contact__item">
                                 <div class="contact__icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Ubicación</span>
-                                    <span class="contact__value">Ciudad, País</span>
+                                    <span class="contact__value">Ciudad de México, México</span>
                                 </div>
                             </div>
 
-                            <!-- ERROR 9: El texto "Disponible para trabajar" no tiene el estilo verde
-                         PISTA: Falta el modificador de clase que indica disponibilidad -->
                             <div class="contact__item">
                                 <div class="contact__icon">
                                     <i class="fas fa-briefcase"></i>
@@ -524,7 +464,7 @@
                             <p class="contact__card-text">
                                 Envíame un mensaje y te responderé lo antes posible.
                             </p>
-                            <a href="mailto:tu@email.com" class="btn btn--primary btn--large btn--full">
+                            <a href="mailto:moctezumadiego5@gmail.com" class="btn btn--primary btn--large btn--full">
                                 <i class="fas fa-paper-plane"></i> Enviar mensaje
                             </a>
                         </div>
@@ -540,25 +480,23 @@
             <div class="footer__content">
                 <div class="footer__brand">
                     <a href="#" class="footer__logo">
-                        <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
+                        <span class="logo__bracket">&lt;</span>RafaelM<span class="logo__bracket">/&gt;</span>
                     </a>
                     <p class="footer__text">
                         Gracias por visitar mi portfolio. ¡Espero que podamos trabajar juntos pronto!
                     </p>
                 </div>
 
-                <!-- ERROR 10: Uno de los íconos de redes sociales no tiene la clase correcta para estilos
-                     PISTA: Revisa que todos los enlaces tengan la clase footer__social-link -->
                 <div class="footer__social">
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.linkedin.com/in/rafael-moctezuma/" target="_blank" rel="noopener noreferrer"
                         class="footer__social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/DiegoMoctezuma" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub" class="footer__social-link">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="mailto:tu@email.com" class="footer__social-link" aria-label="Email">
+                    <a href="mailto:moctezumadiego5@gmail.com" class="footer__social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -566,7 +504,7 @@
 
             <div class="footer__bottom">
                 <p class="footer__copyright">
-                    &copy; 2026 Tu Nombre. Todos los derechos reservados.
+                    &copy; 2026 Moctezuma Ramirez Diego Rafael. Todos los derechos reservados.
                 </p>
                 <p class="footer__made">
                     Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i>
