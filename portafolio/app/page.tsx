@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa";
+
 import Contact from "./Components/Contact/Contact";
 import CV from "./Components/CV/CV";
 import Footer from "./Components/Footer/Footer";
@@ -16,6 +19,9 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+      <Link href="#home" className="scroll-top" id="scroll-top">
+        <FaArrowUp></FaArrowUp>
+      </Link>
     </>
   );
 }
