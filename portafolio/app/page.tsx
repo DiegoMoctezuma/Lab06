@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact/Contact";
 import CV from "./Components/CV/CV";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <InterestsSubjects />
       <CV />
       <Projects />
+      <Contact />
     </>
   );
 }

@@ -1,42 +1,8 @@
 @import "tailwindcss";
 
-
-/* ========================================
-   LANDING PAGE - PORTFOLIO PROFESIONAL
-   Autor: Tu Nombre
-   Versión: 1.0 (EJERCICIO CON ERRORES)
-   ========================================
-   
-   ¡¡¡ EJERCICIO PARA ESTUDIANTES !!!
-   
-   Este archivo contiene ERRORES INTENCIONALES que debes encontrar y corregir.
-   
-   INSTRUCCIONES:
-   1. Busca los comentarios que comienzan con "ERROR #" para encontrar los problemas
-   2. Lee la PISTA para entender qué está mal
-   3. Si el error es AVANZADO, la SOLUCIÓN completa está incluida
-   4. Corrige el código y observa los cambios en el navegador
-   
-   TOTAL DE ERRORES EN CSS: 18
-   - Errores simples (solo pista): 13
-   - Errores avanzados (con solución): 5
-   
-   TEMAS QUE PRACTICARÁS:
-   - Variables CSS
-   - Flexbox y Grid
-   - Box model (margin, padding, border-radius)
-   - Transiciones y animaciones
-   - Selectores (incluyendo pseudoclases y pseudoelementos)
-   - Z-index y posicionamiento
-   
-   ¡Buena suerte!
-   ======================================== */
-
 /* ========== VARIABLES CSS ========== */
 :root {
   /* Colores principales */
-  /* ERROR 1: El color primario no es el correcto, debería ser un cyan vibrante
-       PISTA: Revisa el valor hexadecimal, el original era un tono cyan (#0ea5e9) */
   --color-primary: #0ea5e9;
   /* Cyan vibrante */
   --color-primary-dark: #0284c7;
@@ -108,8 +74,6 @@
   --transition-slow: 350ms ease;
 
   /* Z-index */
-  /* ERROR 2: El header queda detrás del contenido al hacer scroll
-       PISTA: El valor del z-index es muy bajo para un elemento fijo */
   --z-fixed: 1000;
   --z-modal: 1000;
 
@@ -168,8 +132,6 @@ button {
 /* ========== LAYOUT ========== */
 .container {
   max-width: 1200px;
-  /* ERROR 3: El contenido no está centrado en la página
-       PISTA: Falta una propiedad que centra elementos de bloque horizontalmente */
   padding: 0 var(--spacing-lg);
   margin: 0 auto;
 }
@@ -219,10 +181,6 @@ button {
   font-size: var(--font-size-base);
   font-weight: 600;
   border-radius: var(--border-radius-lg);
-  /* ERROR 4 (AVANZADO): Los botones cambian de estado de forma abrupta sin suavidad
-       SOLUCIÓN: Falta la propiedad transition para animar los cambios de estado
-       Agregar: transition: all var(--transition-base);
-       Esto hace que el hover y otros estados se animen suavemente */
   transition: all var(--transition-base);
   cursor: pointer;
   white-space: nowrap;
@@ -232,8 +190,6 @@ button {
   background: var(--gradient-primary);
   color: white;
   border: none;
-  /* ERROR 5: El botón primario no tiene profundidad ni efecto de brillo
-       PISTA: Falta la propiedad que agrega sombras al elemento */
   box-shadow: var(--shadow-glow);
 }
 
@@ -278,114 +234,6 @@ button {
 
 
 
-/* ========== CONTACT SECTION ========== */
-.contact {
-  background: var(--color-bg-primary);
-  position: relative;
-}
-
-.contact::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-}
-
-.contact__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-3xl);
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-
-.contact__description {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-xl);
-  line-height: 1.8;
-}
-
-.contact__data {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
-}
-
-.contact__item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-}
-
-.contact__icon {
-  width: 50px;
-  height: 50px;
-  background: rgba(14, 165, 233, 0.1);
-  border-radius: var(--border-radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-primary);
-}
-
-.contact__label {
-  display: block;
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  margin-bottom: var(--spacing-xs);
-}
-
-.contact__value {
-  font-size: var(--font-size-base);
-  font-weight: 500;
-  color: var(--color-text-primary);
-}
-
-.contact__value--available {
-  color: #10b981;
-}
-
-.contact__card {
-  /* ERROR 18: La card de contacto no tiene el fondo degradado
-       PISTA: Falta la propiedad background con el gradiente primario */
-  background: var(--gradient-primary);
-  border-radius: var(--border-radius-xl);
-  padding: var(--spacing-2xl);
-  text-align: center;
-}
-
-.contact__card-title {
-  font-size: var(--font-size-2xl);
-  font-weight: 700;
-  color: white;
-  margin-bottom: var(--spacing-md);
-}
-
-.contact__card-text {
-  font-size: var(--font-size-base);
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: var(--spacing-xl);
-}
-
-.contact__card .btn--primary {
-  background: white;
-  color: var(--color-primary);
-  box-shadow: var(--shadow-lg);
-}
-
-.contact__card .btn--primary:hover {
-  background: var(--color-bg-primary);
-  color: white;
-}
-
 /* ========== FOOTER ========== */
 .footer {
   background: var(--color-bg-secondary);
@@ -416,8 +264,6 @@ button {
 }
 
 .footer__social {
-  /* ERROR 16: Los iconos de redes sociales del footer están apilados verticalmente
-       PISTA: Falta la propiedad display que permite alinear elementos en fila */
   gap: var(--spacing-md);
   display: flex;
 }
@@ -426,8 +272,6 @@ button {
   width: 45px;
   height: 45px;
   background: var(--color-bg-tertiary);
-  /* ERROR 17: Los iconos de redes sociales son cuadrados en vez de círculos
-       PISTA: Falta una propiedad de borde para hacer elementos circulares */
   border-radius: 50%;
   display: flex;
   align-items: center;
