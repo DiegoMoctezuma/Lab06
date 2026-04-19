@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './Header.module.css'
 import Link from 'next/link';
 
+import { FaBars, FaTimes } from 'react-icons/fa'
+
 let headerData: String = "Rafael Moctezuma"
 
 export default function Header() {
@@ -14,12 +16,12 @@ export default function Header() {
 
                 <input type="checkbox" id="nav-toggle" className={styles.nav__checkbox} />
                 <label htmlFor="nav-toggle" className={styles.nav__toggle}>
-                    <i className="fas fa-bars"></i>
+                    <FaBars></FaBars>
                 </label>
 
                 <div className={styles.nav__menu} id="nav-menu">
                     <label htmlFor="nav-toggle" className={styles.nav__close}>
-                        <i className="fas fa-times"></i>
+                        <FaTimes></FaTimes>
                     </label>
 
                     <ul className={styles.nav__list}>
